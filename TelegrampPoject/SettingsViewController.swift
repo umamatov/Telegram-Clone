@@ -170,13 +170,14 @@ class SettingsViewController: UIViewController {
         return deviceimage
     }()
     
-    var deviceslabel: UILabel = {
-        let deviceslabel = UILabel()
-        deviceslabel.translatesAutoresizingMaskIntoConstraints=false
-        deviceslabel.font = UIFont.systemFont(ofSize: 18)
-        deviceslabel.textColor = UIColor.black
-        deviceslabel.text = "Devices"
-        return deviceslabel
+    var devicesbtn: UIButton = {
+        let devicesbtn = UIButton()
+        devicesbtn.translatesAutoresizingMaskIntoConstraints=false
+        devicesbtn.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        devicesbtn.setTitleColor(UIColor.black, for: .normal)
+        devicesbtn.setTitle("Devices", for: .normal)
+        devicesbtn.addTarget(self, action: #selector(secondetapped), for: .touchUpInside)
+        return devicesbtn
     }()
     
     var second: UIImageView = {
@@ -599,6 +600,11 @@ class SettingsViewController: UIViewController {
         
         
         
+    }
+    
+    @objc func secondetapped(){
+        let controller = SecondeViewController()
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     @objc func firsttapped(){

@@ -69,6 +69,8 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return customeView
     }()
    
+    var list:[SettingModel]=[]
+    var filtered:[SettingModel]=[]
     
     
     override func viewDidLoad() {
@@ -96,7 +98,8 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         segmentedControl.layer.cornerRadius=5
         segmentedControl.backgroundColor = UIColor.systemGray5
         segmentedControl.tintColor = .white
-        
+        segmentedControl.addTarget(self, action: #selector(indexChanged), for: .valueChanged)
+          
         navigationItem.titleView = segmentedControl
         
         let rieghtlabel = UILabel()
@@ -131,6 +134,8 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         customeView.rightAnchor.constraint(equalTo: view.rightAnchor,constant: -10).isActive=true
         customeView.bottomAnchor.constraint(equalTo: view.bottomAnchor,constant: -5).isActive=true
         customeView.layer.cornerRadius = 10
+        
+        setSettingModel()
     
 
     
@@ -143,8 +148,16 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
      @objc func indexChanged(_ sender: UISegmentedControl) {
          switch sender.selectedSegmentIndex{
          case 0:
+             filtered.removeAll()
+             filtered=list
+             tableView.reloadData()
              break
          case 1:
+             filtered.removeAll()
+             filtered=list.filter{
+                 $0.time=="Missed"
+             }
+             tableView.reloadData()
              break
          default:
              break
@@ -160,7 +173,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 30
+        return filtered.count
         
     }
    
@@ -168,10 +181,57 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let cellId = "CallTableViewCell32"
         tableView.register(CallTableViewCell.self, forCellReuseIdentifier: cellId)
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! CallTableViewCell
+      
+        let settingModel = filtered[indexPath.row]
+        
+        cell.nameLabel.text=settingModel.name
+        cell.khabibImage.image=settingModel.image
+        cell.incomingLabel.text=settingModel.time
+        cell.videoImage.image=settingModel.video
+        if(settingModel.time=="Missed"){
+            cell.nameLabel.textColor = .red
+            
+        }else{
+            
+                cell.nameLabel.textColor = .black
+        }
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
+
+    func setSettingModel(){
+        
+        
+        list.append(SettingModel(image:UIImage(named: "polis_image")!, name: "Jack Hac", time: "Outgoing (9 min)", video: UIImage(named: "video_image-1")))
+        
+        list.append(SettingModel(image: UIImage(named: "musulman_image")!, name: "Hacker", time:String("Outgoing"), video: UIImage(named: "phone_image-2")))
+        
+        list.append(SettingModel(image: UIImage(named: "vor_image")!, name: "Jamshid", time: "Outgoing (59 sec)", video: UIImage(named: "video_image-1")))
+        
+        list.append(SettingModel(image: UIImage(named: "baby_image-1")!, name: "Doston Ergashev",  time: "Outgoing, Incoming", video: UIImage(named: "phone_image-2")))
+        
+        list.append(SettingModel(image: UIImage(named: "buetuful_image")!, name: "Rasuljon", time: "Missed", video: UIImage(named: "")))
+        
+        list.append(SettingModel(image: UIImage(named: "KHabib_image")!, name: "KHabib Nurmagedov",  time: "Outgoing (39 min)", video: UIImage(named: "video_image-1")))
+        
+        list.append(SettingModel(image: UIImage(named: "smile_image")!, name: "Messi", time: "Outgoing", video: UIImage(named: "")))
+        
+        list.append(SettingModel(image: UIImage(named: "famly_image")!, name: "Jony", time: "Outgoing (30 sec)", video: UIImage(named: "phone_image-2")))
+        
+        list.append(SettingModel(image: UIImage(named: "man_image-1")!, name: "Hacker", time: "Outgoing, Incoming", video: UIImage(named: "video_image-1")))
+        
+        list.append(SettingModel(image: UIImage(named: "newyork_image")!, name: "Hacker", time: "Missed", video: UIImage(named: "")))
+        
+        list.append(SettingModel(image: UIImage(named: "texno_image")!, name: "Hacker",  time: "Missed", video: UIImage(named: "")))
+        
+        list.append(SettingModel(image: UIImage(named: "baby_image")!, name: "Hacker", time: "Missed", video: UIImage(named: "")))
+        
+        filtered=list
+    }
+    
+    
 }

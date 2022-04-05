@@ -103,9 +103,9 @@ extension SettingsViewController{
         deviceimage.topAnchor.constraint(equalTo: yellowview.topAnchor,constant: 1).isActive=true
         deviceimage.leftAnchor.constraint(equalTo: yellowview.leftAnchor,constant: 1).isActive=true
         
-        setview.addSubview(deviceslabel)
-        deviceslabel.topAnchor.constraint(equalTo: chizview.bottomAnchor,constant: 7).isActive=true
-        deviceslabel.leftAnchor.constraint(equalTo: yellowview.rightAnchor,constant: 11).isActive=true
+        setview.addSubview(devicesbtn)
+        devicesbtn.topAnchor.constraint(equalTo: chizview.bottomAnchor,constant: 7).isActive=true
+        devicesbtn.leftAnchor.constraint(equalTo: yellowview.rightAnchor,constant: 11).isActive=true
         
         setview.addSubview(second)
         second.topAnchor.constraint(equalTo: chizview.bottomAnchor,constant: 5).isActive=true

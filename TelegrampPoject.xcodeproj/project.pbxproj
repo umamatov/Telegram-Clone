@@ -19,6 +19,8 @@
 		597C3BB827F46BBA0065CB8D /* CostomOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597C3BB727F46BBA0065CB8D /* CostomOrderCell.swift */; };
 		597C3BBA27F46E460065CB8D /* TableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597C3BB927F46E460065CB8D /* TableViewHeaderView.swift */; };
 		597C3BBC27F48D810065CB8D /* SearchbarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597C3BBB27F48D810065CB8D /* SearchbarCell.swift */; };
+		599698A827FB0887000912F2 /* SecondeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599698A727FB0887000912F2 /* SecondeViewController.swift */; };
+		599698AA27FC0247000912F2 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599698A927FC0247000912F2 /* ImageView.swift */; };
 		59C5117627EC33200036AE83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C5117527EC33200036AE83 /* AppDelegate.swift */; };
 		59C5117827EC33200036AE83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C5117727EC33200036AE83 /* SceneDelegate.swift */; };
 		59C5117A27EC33200036AE83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C5117927EC33200036AE83 /* ViewController.swift */; };
@@ -47,6 +49,7 @@
 		59D290B327F837360010504A /* PhotoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D290B227F837360010504A /* PhotoTableCell.swift */; };
 		59D290B527F8779A0010504A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D290B427F8779A0010504A /* FirstViewController.swift */; };
 		59D290B727FAB3A30010504A /* CallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D290B627FAB3A30010504A /* CallTableViewCell.swift */; };
+		59D290B927FAD5470010504A /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D290B827FAD5470010504A /* SettingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,8 @@
 		597C3BB727F46BBA0065CB8D /* CostomOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostomOrderCell.swift; sourceTree = "<group>"; };
 		597C3BB927F46E460065CB8D /* TableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeaderView.swift; sourceTree = "<group>"; };
 		597C3BBB27F48D810065CB8D /* SearchbarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchbarCell.swift; sourceTree = "<group>"; };
+		599698A727FB0887000912F2 /* SecondeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondeViewController.swift; sourceTree = "<group>"; };
+		599698A927FC0247000912F2 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		59C5117227EC33200036AE83 /* TelegrampPoject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelegrampPoject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59C5117527EC33200036AE83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59C5117727EC33200036AE83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +116,7 @@
 		59D290B227F837360010504A /* PhotoTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableCell.swift; sourceTree = "<group>"; };
 		59D290B427F8779A0010504A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		59D290B627FAB3A30010504A /* CallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallTableViewCell.swift; sourceTree = "<group>"; };
+		59D290B827FAD5470010504A /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				597C3BB327F45DEB0065CB8D /* ViewControllerExtensions.swift */,
+				599698A927FC0247000912F2 /* ImageView.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -248,6 +255,8 @@
 				59D290B227F837360010504A /* PhotoTableCell.swift */,
 				59D290B427F8779A0010504A /* FirstViewController.swift */,
 				59D290B627FAB3A30010504A /* CallTableViewCell.swift */,
+				59D290B827FAD5470010504A /* SettingModel.swift */,
+				599698A727FB0887000912F2 /* SecondeViewController.swift */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -388,6 +397,7 @@
 				59C511A827EC370F0036AE83 /* Extension.swift in Sources */,
 				59C5117A27EC33200036AE83 /* ViewController.swift in Sources */,
 				597C3BB627F45E3D0065CB8D /* InviteViewController.swift in Sources */,
+				59D290B927FAD5470010504A /* SettingModel.swift in Sources */,
 				59C511BF27ECE64F0036AE83 /* ChatModel.swift in Sources */,
 				597C3BBA27F46E460065CB8D /* TableViewHeaderView.swift in Sources */,
 				59C511B327EC4A390036AE83 /* tableViewHeader.swift in Sources */,
@@ -400,6 +410,7 @@
 				59D290B127F7037C0010504A /* ForTAppedViewController.swift in Sources */,
 				5914C08D27F4119C00052557 /* ContactViewController.swift in Sources */,
 				59C511AE27EC37C50036AE83 /* ChatsViewController.swift in Sources */,
+				599698A827FB0887000912F2 /* SecondeViewController.swift in Sources */,
 				59C5117627EC33200036AE83 /* AppDelegate.swift in Sources */,
 				5914C08327F17F3300052557 /* ChatViewController.swift in Sources */,
 				59C5117827EC33200036AE83 /* SceneDelegate.swift in Sources */,
@@ -409,6 +420,7 @@
 				59D290AD27F615DE0010504A /* RegisterCell.swift in Sources */,
 				59C511B527EC4BED0036AE83 /* TableViewcell.swift in Sources */,
 				597C3BBC27F48D810065CB8D /* SearchbarCell.swift in Sources */,
+				599698AA27FC0247000912F2 /* ImageView.swift in Sources */,
 				5914C08527F1932800052557 /* TableViewChat.swift in Sources */,
 				59C511BA27EC88140036AE83 /* SecondTableViewCell.swift in Sources */,
 				5914C08727F2061000052557 /* SecondChatmodel.swift in Sources */,
