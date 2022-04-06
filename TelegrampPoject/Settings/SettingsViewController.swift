@@ -209,13 +209,14 @@ class SettingsViewController: UIViewController {
         return folderimage
     }()
     
-    var chatlabel: UILabel = {
-        let chatlabel = UILabel()
-        chatlabel.translatesAutoresizingMaskIntoConstraints=false
-        chatlabel.font = UIFont.systemFont(ofSize: 18)
-        chatlabel.textColor = UIColor.black
-        chatlabel.text = "Chat Folders"
-        return chatlabel
+    var chatbtn: UIButton = {
+        let chatbtn = UIButton()
+        chatbtn.translatesAutoresizingMaskIntoConstraints=false
+        chatbtn.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        chatbtn.setTitleColor(.black, for: .normal)
+        chatbtn.setTitle("Chat Folders", for: .normal)
+        chatbtn.addTarget(self, action: #selector(ChatfloderTapped), for: .touchUpInside)
+        return chatbtn
     }()
     
     var thorth: UIImageView = {
@@ -601,6 +602,13 @@ class SettingsViewController: UIViewController {
         
         
     }
+    
+    
+    @objc func ChatfloderTapped(){
+        let controller = ChatTappedViewController()
+        navigationController?.pushViewController(controller, animated: true)
+    }
+    
     
     @objc func secondetapped(){
         let controller = SecondeViewController()

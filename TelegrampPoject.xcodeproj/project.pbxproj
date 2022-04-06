@@ -14,6 +14,7 @@
 		5914C08927F2D8A400052557 /* FooterCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5914C08827F2D8A400052557 /* FooterCollectionReusableView.swift */; };
 		5914C08B27F2ECDD00052557 /* LeftMytableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5914C08A27F2ECDD00052557 /* LeftMytableCell.swift */; };
 		5914C08D27F4119C00052557 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5914C08C27F4119C00052557 /* ContactViewController.swift */; };
+		5951BFC627FD9D2B00BF05BE /* ChatTappedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951BFC527FD9D2B00BF05BE /* ChatTappedViewController.swift */; };
 		597C3BB427F45DEB0065CB8D /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597C3BB327F45DEB0065CB8D /* ViewControllerExtensions.swift */; };
 		597C3BB627F45E3D0065CB8D /* InviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597C3BB527F45E3D0065CB8D /* InviteViewController.swift */; };
 		597C3BB827F46BBA0065CB8D /* CostomOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597C3BB727F46BBA0065CB8D /* CostomOrderCell.swift */; };
@@ -77,6 +78,7 @@
 		5914C08827F2D8A400052557 /* FooterCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterCollectionReusableView.swift; sourceTree = "<group>"; };
 		5914C08A27F2ECDD00052557 /* LeftMytableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMytableCell.swift; sourceTree = "<group>"; };
 		5914C08C27F4119C00052557 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		5951BFC527FD9D2B00BF05BE /* ChatTappedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTappedViewController.swift; sourceTree = "<group>"; };
 		597C3BB327F45DEB0065CB8D /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
 		597C3BB527F45E3D0065CB8D /* InviteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteViewController.swift; sourceTree = "<group>"; };
 		597C3BB727F46BBA0065CB8D /* CostomOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostomOrderCell.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				59D290B627FAB3A30010504A /* CallTableViewCell.swift */,
 				59D290B827FAD5470010504A /* SettingModel.swift */,
 				599698A727FB0887000912F2 /* SecondeViewController.swift */,
+				5951BFC527FD9D2B00BF05BE /* ChatTappedViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -209,13 +212,13 @@
 		59C5117427EC33200036AE83 /* TelegrampPoject */ = {
 			isa = PBXGroup;
 			children = (
-				5951BFC027FD871000BF05BE /* Settings */,
 				5951BFBF27FD86FD00BF05BE /* Extensions */,
 				5951BFBB27FD86B100BF05BE /* Contacts */,
 				59C5117527EC33200036AE83 /* AppDelegate.swift */,
 				59C5117727EC33200036AE83 /* SceneDelegate.swift */,
 				59C5117927EC33200036AE83 /* ViewController.swift */,
 				59C511B827EC83000036AE83 /* Chats */,
+				5951BFC027FD871000BF05BE /* Settings */,
 				59C5117B27EC33200036AE83 /* Main.storyboard */,
 				59C5117E27EC33220036AE83 /* Assets.xcassets */,
 				59C5118027EC33220036AE83 /* LaunchScreen.storyboard */,
@@ -422,6 +425,7 @@
 				597C3BBC27F48D810065CB8D /* SearchbarCell.swift in Sources */,
 				599698AA27FC0247000912F2 /* ImageView.swift in Sources */,
 				5914C08527F1932800052557 /* TableViewChat.swift in Sources */,
+				5951BFC627FD9D2B00BF05BE /* ChatTappedViewController.swift in Sources */,
 				59C511BA27EC88140036AE83 /* SecondTableViewCell.swift in Sources */,
 				5914C08727F2061000052557 /* SecondChatmodel.swift in Sources */,
 				59D290B727FAB3A30010504A /* CallTableViewCell.swift in Sources */,

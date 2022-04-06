@@ -104,7 +104,7 @@ extension SettingsViewController{
         deviceimage.leftAnchor.constraint(equalTo: yellowview.leftAnchor,constant: 1).isActive=true
         
         setview.addSubview(devicesbtn)
-        devicesbtn.topAnchor.constraint(equalTo: chizview.bottomAnchor,constant: 7).isActive=true
+        devicesbtn.topAnchor.constraint(equalTo: chizview.bottomAnchor,constant: 0).isActive=true
         devicesbtn.leftAnchor.constraint(equalTo: yellowview.rightAnchor,constant: 11).isActive=true
         
         setview.addSubview(second)
@@ -130,9 +130,9 @@ extension SettingsViewController{
         folderimage.heightAnchor.constraint(equalToConstant: 20).isActive=true
         folderimage.widthAnchor.constraint(equalToConstant: 20).isActive=true
         
-        setview.addSubview(chatlabel)
-        chatlabel.topAnchor.constraint(equalTo: cubicview.bottomAnchor,constant: 7).isActive=true
-        chatlabel.leftAnchor.constraint(equalTo: pinkview.rightAnchor,constant: 11).isActive=true
+        setview.addSubview(chatbtn)
+        chatbtn.topAnchor.constraint(equalTo: cubicview.bottomAnchor,constant: 0).isActive=true
+        chatbtn.leftAnchor.constraint(equalTo: pinkview.rightAnchor,constant: 11).isActive=true
         
         setview.addSubview(thorth)
         thorth.topAnchor.constraint(equalTo: cubicview.bottomAnchor,constant: 5).isActive=true
