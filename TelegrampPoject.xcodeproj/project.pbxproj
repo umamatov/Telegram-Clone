@@ -144,13 +144,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		597C3BB227F45DCE0065CB8D /* Extensions */ = {
+		5951BFBB27FD86B100BF05BE /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				59C511A527EC34E70036AE83 /* ContactsViewController.swift */,
+				59C511B227EC4A390036AE83 /* tableViewHeader.swift */,
+				59C511B427EC4BED0036AE83 /* TableViewcell.swift */,
+				59C511B627EC50740036AE83 /* FirstTableViewCell.swift */,
+				59C511C027ED90C90036AE83 /* ContactModel.swift */,
+				5914C08C27F4119C00052557 /* ContactViewController.swift */,
+				597C3BB527F45E3D0065CB8D /* InviteViewController.swift */,
+				597C3BB727F46BBA0065CB8D /* CostomOrderCell.swift */,
+				597C3BB927F46E460065CB8D /* TableViewHeaderView.swift */,
+				597C3BBB27F48D810065CB8D /* SearchbarCell.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		5951BFBF27FD86FD00BF05BE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				597C3BB327F45DEB0065CB8D /* ViewControllerExtensions.swift */,
 				599698A927FC0247000912F2 /* ImageView.swift */,
 			);
-			name = Extensions;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5951BFC027FD871000BF05BE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				59C511AF27EC37F40036AE83 /* SettingsViewController.swift */,
+				5914C08027EDDD0F00052557 /* SetingAnchors.swift */,
+				59D290A827F567C60010504A /* BotomViewController.swift */,
+				59D290B027F7037C0010504A /* ForTAppedViewController.swift */,
+				59D290B227F837360010504A /* PhotoTableCell.swift */,
+				59D290B427F8779A0010504A /* FirstViewController.swift */,
+				59D290B627FAB3A30010504A /* CallTableViewCell.swift */,
+				59D290B827FAD5470010504A /* SettingModel.swift */,
+				599698A727FB0887000912F2 /* SecondeViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		59C5116927EC33200036AE83 = {
@@ -176,13 +209,13 @@
 		59C5117427EC33200036AE83 /* TelegrampPoject */ = {
 			isa = PBXGroup;
 			children = (
-				597C3BB227F45DCE0065CB8D /* Extensions */,
+				5951BFC027FD871000BF05BE /* Settings */,
+				5951BFBF27FD86FD00BF05BE /* Extensions */,
+				5951BFBB27FD86B100BF05BE /* Contacts */,
 				59C5117527EC33200036AE83 /* AppDelegate.swift */,
 				59C5117727EC33200036AE83 /* SceneDelegate.swift */,
 				59C5117927EC33200036AE83 /* ViewController.swift */,
-				59C511B127EC49E40036AE83 /* Contacts */,
 				59C511B827EC83000036AE83 /* Chats */,
-				59C511BD27ECA3C40036AE83 /* Settings */,
 				59C5117B27EC33200036AE83 /* Main.storyboard */,
 				59C5117E27EC33220036AE83 /* Assets.xcassets */,
 				59C5118027EC33220036AE83 /* LaunchScreen.storyboard */,
@@ -210,23 +243,6 @@
 			path = TelegrampPojectUITests;
 			sourceTree = "<group>";
 		};
-		59C511B127EC49E40036AE83 /* Contacts */ = {
-			isa = PBXGroup;
-			children = (
-				59C511A527EC34E70036AE83 /* ContactsViewController.swift */,
-				59C511B227EC4A390036AE83 /* tableViewHeader.swift */,
-				59C511B427EC4BED0036AE83 /* TableViewcell.swift */,
-				59C511B627EC50740036AE83 /* FirstTableViewCell.swift */,
-				59C511C027ED90C90036AE83 /* ContactModel.swift */,
-				5914C08C27F4119C00052557 /* ContactViewController.swift */,
-				597C3BB527F45E3D0065CB8D /* InviteViewController.swift */,
-				597C3BB727F46BBA0065CB8D /* CostomOrderCell.swift */,
-				597C3BB927F46E460065CB8D /* TableViewHeaderView.swift */,
-				597C3BBB27F48D810065CB8D /* SearchbarCell.swift */,
-			);
-			name = Contacts;
-			sourceTree = "<group>";
-		};
 		59C511B827EC83000036AE83 /* Chats */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,22 +259,6 @@
 				59D290AC27F615DE0010504A /* RegisterCell.swift */,
 			);
 			path = Chats;
-			sourceTree = "<group>";
-		};
-		59C511BD27ECA3C40036AE83 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				59C511AF27EC37F40036AE83 /* SettingsViewController.swift */,
-				5914C08027EDDD0F00052557 /* SetingAnchors.swift */,
-				59D290A827F567C60010504A /* BotomViewController.swift */,
-				59D290B027F7037C0010504A /* ForTAppedViewController.swift */,
-				59D290B227F837360010504A /* PhotoTableCell.swift */,
-				59D290B427F8779A0010504A /* FirstViewController.swift */,
-				59D290B627FAB3A30010504A /* CallTableViewCell.swift */,
-				59D290B827FAD5470010504A /* SettingModel.swift */,
-				599698A727FB0887000912F2 /* SecondeViewController.swift */,
-			);
-			name = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
