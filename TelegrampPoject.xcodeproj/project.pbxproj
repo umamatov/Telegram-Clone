@@ -15,6 +15,7 @@
 		5914C08B27F2ECDD00052557 /* LeftMytableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5914C08A27F2ECDD00052557 /* LeftMytableCell.swift */; };
 		5914C08D27F4119C00052557 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5914C08C27F4119C00052557 /* ContactViewController.swift */; };
 		5951BFC627FD9D2B00BF05BE /* ChatTappedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951BFC527FD9D2B00BF05BE /* ChatTappedViewController.swift */; };
+		5951BFD927FF0A4700BF05BE /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951BFD827FF0A4700BF05BE /* NotificationViewController.swift */; };
 		597C3BB427F45DEB0065CB8D /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597C3BB327F45DEB0065CB8D /* ViewControllerExtensions.swift */; };
 		597C3BB627F45E3D0065CB8D /* InviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597C3BB527F45E3D0065CB8D /* InviteViewController.swift */; };
 		597C3BB827F46BBA0065CB8D /* CostomOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597C3BB727F46BBA0065CB8D /* CostomOrderCell.swift */; };
@@ -79,6 +80,7 @@
 		5914C08A27F2ECDD00052557 /* LeftMytableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMytableCell.swift; sourceTree = "<group>"; };
 		5914C08C27F4119C00052557 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		5951BFC527FD9D2B00BF05BE /* ChatTappedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTappedViewController.swift; sourceTree = "<group>"; };
+		5951BFD827FF0A4700BF05BE /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		597C3BB327F45DEB0065CB8D /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
 		597C3BB527F45E3D0065CB8D /* InviteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteViewController.swift; sourceTree = "<group>"; };
 		597C3BB727F46BBA0065CB8D /* CostomOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostomOrderCell.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				59D290B827FAD5470010504A /* SettingModel.swift */,
 				599698A727FB0887000912F2 /* SecondeViewController.swift */,
 				5951BFC527FD9D2B00BF05BE /* ChatTappedViewController.swift */,
+				5951BFD827FF0A4700BF05BE /* NotificationViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				5914C08727F2061000052557 /* SecondChatmodel.swift in Sources */,
 				59D290B727FAB3A30010504A /* CallTableViewCell.swift in Sources */,
 				597C3BB427F45DEB0065CB8D /* ViewControllerExtensions.swift in Sources */,
+				5951BFD927FF0A4700BF05BE /* NotificationViewController.swift in Sources */,
 				59D290AB27F5BC310010504A /* NextPageViewController.swift in Sources */,
 				59C511C127ED90C90036AE83 /* ContactModel.swift in Sources */,
 				597C3BB827F46BBA0065CB8D /* CostomOrderCell.swift in Sources */,

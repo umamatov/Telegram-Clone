@@ -155,9 +155,9 @@ extension SettingsViewController{
         alarmimage.topAnchor.constraint(equalTo: redview.topAnchor,constant: 1).isActive=true
         alarmimage.leftAnchor.constraint(equalTo: redview.leftAnchor,constant: 0).isActive=true
         
-        soundview.addSubview(notificationlabel)
-        notificationlabel.topAnchor.constraint(equalTo: soundview.topAnchor,constant: 10).isActive=true
-        notificationlabel.leftAnchor.constraint(equalTo: redview.rightAnchor,constant: 11).isActive=true
+        soundview.addSubview(notificationBtn)
+        notificationBtn.topAnchor.constraint(equalTo: soundview.topAnchor,constant: 5).isActive=true
+        notificationBtn.leftAnchor.constraint(equalTo: redview.rightAnchor,constant: 11).isActive=true
         
         soundview.addSubview(fourth)
         fourth.topAnchor.constraint(equalTo: soundview.topAnchor,constant: 10).isActive=true

@@ -249,13 +249,14 @@ class SettingsViewController: UIViewController {
         return alarmimage
     }()
     
-    var notificationlabel: UILabel = {
-        let notificationlabel = UILabel()
-        notificationlabel.translatesAutoresizingMaskIntoConstraints=false
-        notificationlabel.font = UIFont.systemFont(ofSize: 18)
-        notificationlabel.textColor = UIColor.black
-        notificationlabel.text = "Notifications and Sounds"
-        return notificationlabel
+    var notificationBtn: UIButton = {
+        let notificationBtn = UIButton()
+        notificationBtn.translatesAutoresizingMaskIntoConstraints=false
+        notificationBtn.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        notificationBtn.setTitleColor(.black, for: .normal)
+        notificationBtn.setTitle("Notifications and Sounds", for: .normal)
+        notificationBtn.addTarget(self, action: #selector(notificationBtnTapped), for: .touchUpInside)
+        return notificationBtn
     }()
     
     var fourth: UIImageView = {
@@ -602,7 +603,10 @@ class SettingsViewController: UIViewController {
         
         
     }
-    
+    @objc func notificationBtnTapped(){
+       let controller = NotificationViewController()
+        navigationController?.pushViewController(controller, animated: true)
+    }
     
     @objc func ChatfloderTapped(){
         let controller = ChatTappedViewController()
