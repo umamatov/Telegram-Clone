@@ -44,17 +44,22 @@ extension SettingsViewController{
         setview.rightAnchor.constraint(equalTo: homeview.rightAnchor,constant: -10).isActive=true
         setview.heightAnchor.constraint(equalToConstant: 165).isActive=true
         
-        setview.addSubview(savedimage)
-        savedimage.topAnchor.constraint(equalTo: setview.topAnchor,constant: 10).isActive=true
-        savedimage.leftAnchor.constraint(equalTo: setview.leftAnchor,constant: 10).isActive=true
-        savedimage.heightAnchor.constraint(equalToConstant: 31).isActive=true
-        savedimage.widthAnchor.constraint(equalToConstant: 32).isActive=true
-        savedimage.layer.masksToBounds = true
-        savedimage.layer.cornerRadius = 15
+        setview.addSubview(savedView)
+        savedView.topAnchor.constraint(equalTo: setview.topAnchor,constant: 10).isActive=true
+        savedView.leftAnchor.constraint(equalTo: setview.leftAnchor,constant: 14).isActive=true
+        savedView.heightAnchor.constraint(equalToConstant: 27).isActive=true
+        savedView.widthAnchor.constraint(equalToConstant: 25).isActive=true
+        savedView.layer.cornerRadius = 5
+        
+        savedView.addSubview(bookmarkImage)
+        bookmarkImage.topAnchor.constraint(equalTo: savedView.topAnchor,constant: 5).isActive=true
+        bookmarkImage.leftAnchor.constraint(equalTo: savedView.leftAnchor,constant: 4).isActive=true
+        bookmarkImage.heightAnchor.constraint(equalToConstant: 17).isActive=true
+        bookmarkImage.widthAnchor.constraint(equalToConstant: 17).isActive=true
         
         setview.addSubview(messagebtn)
         messagebtn.topAnchor.constraint(equalTo: setview.topAnchor,constant: 8).isActive=true
-        messagebtn.leftAnchor.constraint(equalTo: savedimage.rightAnchor,constant: 5).isActive=true
+        messagebtn.leftAnchor.constraint(equalTo: savedView.rightAnchor,constant: 5).isActive=true
         messagebtn.addTarget(self, action: #selector(fortapped), for: .touchUpInside)
         
         setview.addSubview(rieghtimage)
@@ -62,7 +67,7 @@ extension SettingsViewController{
         rieghtimage.rightAnchor.constraint(equalTo: setview.rightAnchor,constant: -10).isActive=true
         
         setview.addSubview(lineview)
-        lineview.topAnchor.constraint(equalTo: savedimage.bottomAnchor,constant: 5).isActive=true
+        lineview.topAnchor.constraint(equalTo: savedView.bottomAnchor,constant: 5).isActive=true
         lineview.leftAnchor.constraint(equalTo: setview.leftAnchor,constant: 45).isActive=true
         lineview.rightAnchor.constraint(equalTo: setview.rightAnchor,constant: -0).isActive=true
         lineview.heightAnchor.constraint(equalToConstant: 1).isActive=true
@@ -182,9 +187,9 @@ extension SettingsViewController{
         locimage.heightAnchor.constraint(equalToConstant: 20).isActive=true
         locimage.widthAnchor.constraint(equalToConstant: 20).isActive=true
         
-        soundview.addSubview(securitylabel)
-        securitylabel.topAnchor.constraint(equalTo: iphonview.bottomAnchor,constant: 7).isActive=true
-        securitylabel.leftAnchor.constraint(equalTo: privacy.rightAnchor,constant: 11).isActive=true
+        soundview.addSubview(securityBtn)
+        securityBtn.topAnchor.constraint(equalTo: iphonview.bottomAnchor,constant: 7).isActive=true
+        securityBtn.leftAnchor.constraint(equalTo: privacy.rightAnchor,constant: 11).isActive=true
         
         soundview.addSubview(fifth)
         fifth.topAnchor.constraint(equalTo: iphonview.topAnchor,constant: 10).isActive=true

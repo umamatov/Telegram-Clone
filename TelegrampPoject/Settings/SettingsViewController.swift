@@ -84,13 +84,19 @@ class SettingsViewController: UIViewController {
         return setview
     }()
     
-    var savedimage: UIImageView = {
-        let savedimage = UIImageView()
-        savedimage.translatesAutoresizingMaskIntoConstraints=false
-        savedimage.layer.cornerRadius = 15
-        savedimage.layer.masksToBounds = false
-        savedimage.image = UIImage(named: "seved_image")
-        return savedimage
+    var savedView: UIImageView = {
+        let savedView = UIImageView()
+        savedView.translatesAutoresizingMaskIntoConstraints=false
+        savedView.backgroundColor = .systemBlue
+        savedView.layer.cornerRadius = 30
+        return savedView
+    }()
+    
+    var bookmarkImage: UIImageView = {
+        let bookmarkImage = UIImageView()
+        bookmarkImage.translatesAutoresizingMaskIntoConstraints=false
+        bookmarkImage.image = UIImage(named: "bookmark_image")
+        return bookmarkImage
     }()
     
     var messagebtn: UIButton = {
@@ -288,13 +294,14 @@ class SettingsViewController: UIViewController {
         return locimage
     }()
     
-    var securitylabel: UILabel = {
-        let securotylabel = UILabel()
-        securotylabel.translatesAutoresizingMaskIntoConstraints=false
-        securotylabel.font = UIFont.systemFont(ofSize: 18)
-        securotylabel.textColor = UIColor.black
-        securotylabel.text = "Privacy and Security"
-        return securotylabel
+    var securityBtn: UIButton = {
+        let securityBtn = UIButton()
+        securityBtn.translatesAutoresizingMaskIntoConstraints=false
+        securityBtn.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        securityBtn.setTitleColor(.black, for: .normal)
+        securityBtn.setTitle("Privacy and Security", for: .normal)
+        securityBtn.addTarget(self, action: #selector(privacyTapped), for: .touchUpInside)
+        return securityBtn
     }()
     
     var fifth: UIImageView = {
@@ -603,6 +610,12 @@ class SettingsViewController: UIViewController {
         
         
     }
+    
+    @objc func privacyTapped(){
+       let controller = PrivacyViewController()
+        navigationController?.pushViewController(controller, animated: true)
+    }
+    
     @objc func notificationBtnTapped(){
        let controller = NotificationViewController()
         navigationController?.pushViewController(controller, animated: true)
