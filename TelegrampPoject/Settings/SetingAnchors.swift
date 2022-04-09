@@ -188,7 +188,7 @@ extension SettingsViewController{
         locimage.widthAnchor.constraint(equalToConstant: 20).isActive=true
         
         soundview.addSubview(securityBtn)
-        securityBtn.topAnchor.constraint(equalTo: iphonview.bottomAnchor,constant: 7).isActive=true
+        securityBtn.topAnchor.constraint(equalTo: iphonview.bottomAnchor,constant: 0).isActive=true
         securityBtn.leftAnchor.constraint(equalTo: privacy.rightAnchor,constant: 11).isActive=true
         
         soundview.addSubview(fifth)
@@ -214,9 +214,9 @@ extension SettingsViewController{
         coinimage.heightAnchor.constraint(equalToConstant: 20).isActive=true
         coinimage.widthAnchor.constraint(equalToConstant: 20).isActive=true
         
-        soundview.addSubview(datalabel)
-        datalabel.topAnchor.constraint(equalTo: manview.topAnchor,constant: 8).isActive=true
-        datalabel.leftAnchor.constraint(equalTo: storage.rightAnchor,constant: 11).isActive=true
+        soundview.addSubview(dataBtn)
+        dataBtn.topAnchor.constraint(equalTo: manview.topAnchor,constant: 0).isActive=true
+        dataBtn.leftAnchor.constraint(equalTo: storage.rightAnchor,constant: 11).isActive=true
         
         soundview.addSubview(sixth)
         sixth.topAnchor.constraint(equalTo: manview.topAnchor,constant: 8).isActive=true

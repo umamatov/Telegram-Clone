@@ -18,6 +18,7 @@
 		5951BFD927FF0A4700BF05BE /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951BFD827FF0A4700BF05BE /* NotificationViewController.swift */; };
 		5951BFDB28003A9100BF05BE /* ScrolViewAnchots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951BFDA28003A9100BF05BE /* ScrolViewAnchots.swift */; };
 		5951BFDD2800612900BF05BE /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951BFDC2800612900BF05BE /* PrivacyViewController.swift */; };
+		5951BFDF280197B900BF05BE /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951BFDE280197B900BF05BE /* DataViewController.swift */; };
 		597C3BB427F45DEB0065CB8D /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597C3BB327F45DEB0065CB8D /* ViewControllerExtensions.swift */; };
 		597C3BB627F45E3D0065CB8D /* InviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597C3BB527F45E3D0065CB8D /* InviteViewController.swift */; };
 		597C3BB827F46BBA0065CB8D /* CostomOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597C3BB727F46BBA0065CB8D /* CostomOrderCell.swift */; };
@@ -85,6 +86,7 @@
 		5951BFD827FF0A4700BF05BE /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		5951BFDA28003A9100BF05BE /* ScrolViewAnchots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrolViewAnchots.swift; sourceTree = "<group>"; };
 		5951BFDC2800612900BF05BE /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		5951BFDE280197B900BF05BE /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		597C3BB327F45DEB0065CB8D /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
 		597C3BB527F45E3D0065CB8D /* InviteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteViewController.swift; sourceTree = "<group>"; };
 		597C3BB727F46BBA0065CB8D /* CostomOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostomOrderCell.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				5951BFD827FF0A4700BF05BE /* NotificationViewController.swift */,
 				5951BFDA28003A9100BF05BE /* ScrolViewAnchots.swift */,
 				5951BFDC2800612900BF05BE /* PrivacyViewController.swift */,
+				5951BFDE280197B900BF05BE /* DataViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				599698A827FB0887000912F2 /* SecondeViewController.swift in Sources */,
 				59C5117627EC33200036AE83 /* AppDelegate.swift in Sources */,
 				5914C08327F17F3300052557 /* ChatViewController.swift in Sources */,
+				5951BFDF280197B900BF05BE /* DataViewController.swift in Sources */,
 				59C5117827EC33200036AE83 /* SceneDelegate.swift in Sources */,
 				5914C08B27F2ECDD00052557 /* LeftMytableCell.swift in Sources */,
 				59D290B527F8779A0010504A /* FirstViewController.swift in Sources */,

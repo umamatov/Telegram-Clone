@@ -333,13 +333,14 @@ class SettingsViewController: UIViewController {
         return coinimage
     }()
     
-    var datalabel: UILabel = {
-        let datalabel = UILabel()
-        datalabel.translatesAutoresizingMaskIntoConstraints=false
-        datalabel.font = UIFont.systemFont(ofSize: 18)
-        datalabel.textColor = UIColor.black
-        datalabel.text = "Data and Storage"
-        return datalabel
+    var dataBtn: UIButton = {
+        let dataBtn = UIButton()
+        dataBtn.translatesAutoresizingMaskIntoConstraints=false
+        dataBtn.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        dataBtn.setTitleColor(.black, for: .normal)
+        dataBtn.setTitle( "Data and Storage", for: .normal)
+        dataBtn.addTarget(self, action: #selector(dataTapped), for: .touchUpInside)
+        return dataBtn
     }()
     
     var sixth: UIImageView = {
@@ -609,6 +610,11 @@ class SettingsViewController: UIViewController {
         
         
         
+    }
+    
+    @objc func dataTapped(){
+       let controller = DataViewController()
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     @objc func privacyTapped(){
