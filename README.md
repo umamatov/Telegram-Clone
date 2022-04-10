@@ -32,6 +32,8 @@ Invite Friends Page ->
 
 Chat Messages View From Contacts -> 
 
+<img width="407" alt="Screen Shot 2022-04-10 at 12 51 38" src="https://user-images.githubusercontent.com/101631926/162610859-792e8d4f-b446-412e-ba1d-998d4c089f20.png">
+
 
 
 3. Settings Pages:
