@@ -36,6 +36,9 @@ Chat Messages View From Contacts ->
 
 
 
-3. Settings Pages:
+3. Settings Pages: 
 
  <img width="420" alt="Screen Shot 2022-04-10 at 12 15 33" src="https://user-images.githubusercontent.com/101631926/162607035-ca466a84-56bc-4c73-995e-237d2367f30d.png">
+
+
+And other settings page also developed. 
