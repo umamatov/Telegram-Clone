@@ -24,6 +24,7 @@
 		597C3BB827F46BBA0065CB8D /* CostomOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597C3BB727F46BBA0065CB8D /* CostomOrderCell.swift */; };
 		597C3BBA27F46E460065CB8D /* TableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597C3BB927F46E460065CB8D /* TableViewHeaderView.swift */; };
 		597C3BBC27F48D810065CB8D /* SearchbarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597C3BBB27F48D810065CB8D /* SearchbarCell.swift */; };
+		597DCC272802C09700E1EDAA /* InvitationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597DCC262802C09700E1EDAA /* InvitationModel.swift */; };
 		599698A827FB0887000912F2 /* SecondeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599698A727FB0887000912F2 /* SecondeViewController.swift */; };
 		599698AA27FC0247000912F2 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599698A927FC0247000912F2 /* ImageView.swift */; };
 		59C5117627EC33200036AE83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C5117527EC33200036AE83 /* AppDelegate.swift */; };
@@ -92,6 +93,7 @@
 		597C3BB727F46BBA0065CB8D /* CostomOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostomOrderCell.swift; sourceTree = "<group>"; };
 		597C3BB927F46E460065CB8D /* TableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeaderView.swift; sourceTree = "<group>"; };
 		597C3BBB27F48D810065CB8D /* SearchbarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchbarCell.swift; sourceTree = "<group>"; };
+		597DCC262802C09700E1EDAA /* InvitationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationModel.swift; sourceTree = "<group>"; };
 		599698A727FB0887000912F2 /* SecondeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondeViewController.swift; sourceTree = "<group>"; };
 		599698A927FC0247000912F2 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		59C5117227EC33200036AE83 /* TelegrampPoject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelegrampPoject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +169,7 @@
 				597C3BB727F46BBA0065CB8D /* CostomOrderCell.swift */,
 				597C3BB927F46E460065CB8D /* TableViewHeaderView.swift */,
 				597C3BBB27F48D810065CB8D /* SearchbarCell.swift */,
+				597DCC262802C09700E1EDAA /* InvitationModel.swift */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 				597C3BBA27F46E460065CB8D /* TableViewHeaderView.swift in Sources */,
 				59C511B327EC4A390036AE83 /* tableViewHeader.swift in Sources */,
 				59C511BC27EC88FE0036AE83 /* TableViewHeader.swift in Sources */,
+				597DCC272802C09700E1EDAA /* InvitationModel.swift in Sources */,
 				59D290A927F567C70010504A /* BotomViewController.swift in Sources */,
 				5914C08927F2D8A400052557 /* FooterCollectionReusableView.swift in Sources */,
 				5914C08127EDDD0F00052557 /* SetingAnchors.swift in Sources */,

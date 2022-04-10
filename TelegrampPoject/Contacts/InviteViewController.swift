@@ -63,6 +63,9 @@ class InviteViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     
+    var list:[InvitationModel]=[]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -70,7 +73,7 @@ class InviteViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.dataSource=self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         customeview.addSubview(tableView)
-//        tableView.contentInset=UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
+        //        tableView.contentInset=UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
         
         view.addSubview(homeview)
         homeview.topAnchor.constraint(equalTo: view.topAnchor,constant: 0).isActive=true
@@ -97,6 +100,7 @@ class InviteViewController: UIViewController, UITableViewDelegate, UITableViewDa
         customeview.bottomAnchor.constraint(equalTo: view.bottomAnchor,constant: -0).isActive=true
         
         
+        setContacts()
         
         
         
@@ -111,7 +115,7 @@ class InviteViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 50
+        return list.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -129,7 +133,7 @@ class InviteViewController: UIViewController, UITableViewDelegate, UITableViewDa
             let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! SearchbarCell
             cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
             cell.directionalLayoutMargins = .zero
-//            cell.separatorInset = UIEdgeInsets(top: 0, left: 160, bottom: 0, right: 160);
+            //            cell.separatorInset = UIEdgeInsets(top: 0, left: 160, bottom: 0, right: 160);
             return cell
         }else if (indexPath.row==1){
             let cellId = "TelegramCell"
@@ -138,11 +142,15 @@ class InviteViewController: UIViewController, UITableViewDelegate, UITableViewDa
             cell.directionalLayoutMargins = .zero
             return cell
         }
-            let cellId = "CostomOrderCell"
-            tableView.register(CostomOrderCell.self, forCellReuseIdentifier: cellId)
-            let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! CostomOrderCell
-            return cell
-        }
+        let cellId = "CostomOrderCell"
+        tableView.register(CostomOrderCell.self, forCellReuseIdentifier: cellId)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! CostomOrderCell
+        let model = list[indexPath.row]
+        cell.namelabel.text=model.name
+        cell.contactlabel.text=model.numberOfContacts
+        cell.alertlabel.text=model.firstLetter
+        return cell
+    }
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -156,6 +164,33 @@ class InviteViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     
+    
+    func setContacts()  {
+        list.append(InvitationModel(name: "Sultonov Asad", firstLetter: "S", numberOfContacts: "1,000 contacts on Telegram "))
+        list.append(InvitationModel(name: "Sultonov Asad", firstLetter: "S", numberOfContacts: "1,000 contacts on Telegram "))
+        list.append(InvitationModel(name: "Sultonov Asad", firstLetter: "S", numberOfContacts: "1,000 contacts on Telegram "))
+        list.append(InvitationModel(name: "John Martin", firstLetter: "J", numberOfContacts: "500 contacts on Telegram "))
+        list.append(InvitationModel(name: "Oyebk Mar", firstLetter: "O", numberOfContacts: "100 contacts on Telegram "))
+        list.append(InvitationModel(name: "Maska", firstLetter: "M", numberOfContacts: "534 contacts on Telegram "))
+        list.append(InvitationModel(name: "Botir Aka", firstLetter: "B", numberOfContacts: "67846 contacts on Telegram "))
+        list.append(InvitationModel(name: "OybekJon", firstLetter: "O", numberOfContacts: "2345 contacts on Telegram "))
+        list.append(InvitationModel(name: "Jack Hack", firstLetter: "J", numberOfContacts: "3564 contacts on Telegram "))
+        list.append(InvitationModel(name: "Yaxyo", firstLetter: "Y", numberOfContacts: "34 contacts on Telegram "))
+        list.append(InvitationModel(name: "Kamol aka", firstLetter: "K", numberOfContacts: "563 contacts on Telegram "))
+        list.append(InvitationModel(name: "Sultonov Jamshid", firstLetter: "S", numberOfContacts: "87 contacts on Telegram "))
+        list.append(InvitationModel(name: "Laziz", firstLetter: "L", numberOfContacts: "97 contacts on Telegram "))
+        list.append(InvitationModel(name: "Rasulbek", firstLetter: "R", numberOfContacts: "235 contacts on Telegram "))
+        list.append(InvitationModel(name: "Ulug'", firstLetter: "U", numberOfContacts: "345 contacts on Telegram "))
+        list.append(InvitationModel(name: "Muhammad Aziz", firstLetter: "M", numberOfContacts: "1,000 contacts on Telegram "))
+        list.append(InvitationModel(name: "Don", firstLetter: "D", numberOfContacts: "3456 contacts on Telegram "))
+        list.append(InvitationModel(name: "Test", firstLetter: "T", numberOfContacts: "654 contacts on Telegram "))
+        list.append(InvitationModel(name: "Kolya", firstLetter: "K", numberOfContacts: "7823 contacts on Telegram "))
+        list.append(InvitationModel(name: "Jasur", firstLetter: "J", numberOfContacts: "4536 contacts on Telegram "))
+        list.append(InvitationModel(name: "Bunyod", firstLetter: "B", numberOfContacts: "123345 contacts on Telegram "))
+        list.append(InvitationModel(name: "Ilyos", firstLetter: "I", numberOfContacts: "34521 contacts on Telegram "))
+        
+        self.tableView.reloadData()
+    }
     
 }
 

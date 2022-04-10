@@ -19,11 +19,12 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     let cellId = "LeftMytableCell"
     
     var chatmessage = [
-        ChatMessage(text: "Here's my very message", isIncoming: true),
-        ChatMessage(text: "I'm goin to message another  long message that will word wap", isIncoming: true),
-        ChatMessage(text: "I'm goin to message another  long message that will word wap I'm goin to message another  long message that will word wap I'm goin to message another  long message that will word wap I'm goin to message another  long message that will word wap", isIncoming: false),
-        ChatMessage(text: "yo, dawg, whatup! ", isIncoming: false),
-        ChatMessage(text: "This message should appear on the left with a whith background bubble ", isIncoming: true),
+        ChatMessage(text: "Hello, Github", isIncoming: true),
+        ChatMessage(text: "Here's my message, Please use only for learning purpose from this project.", isIncoming: true),
+        ChatMessage(text: "Hey How are you?", isIncoming: false),
+        ChatMessage(text: "Ok I got you.", isIncoming: false),
+        ChatMessage(text: "Thank you for understanding ", isIncoming: true),
+        ChatMessage(text: "This is personal message view from contacts page ", isIncoming: false),
         
         
     ]

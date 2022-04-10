@@ -15,16 +15,7 @@ class ChatsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     let tableView = UITableView()
     
-    var sortlabel: UILabel = {
-        let sortlabel = UILabel()
-        sortlabel.translatesAutoresizingMaskIntoConstraints=false
-        sortlabel.font = UIFont.systemFont(ofSize: 16)
-        sortlabel.textColor = UIColor.blue
-        sortlabel.text = "Edit"
-        return sortlabel
-    }()
-    
-    
+   
     
     var list:[ChatModel]=[]
     
@@ -44,10 +35,7 @@ class ChatsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         let myRightImage = UIImage(named: "edit_image")?.withRenderingMode(.alwaysOriginal)
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: myRightImage, style: .plain, target: self, action: #selector(addTapped))
-    
-        view.addSubview(sortlabel)
-        sortlabel.topAnchor.constraint(equalTo: view.topAnchor,constant: 35).isActive=true
-        sortlabel.leftAnchor.constraint(equalTo: view.leftAnchor,constant: 8).isActive=true
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Edit", style: .plain, target: self, action: #selector(addTapped))
 
         setChatModel()
         

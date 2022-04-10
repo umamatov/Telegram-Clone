@@ -15,15 +15,7 @@ class ContactsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     let tableView = UITableView()
-    
-    var sortlabel: UILabel = {
-        let sortlabel = UILabel()
-        sortlabel.translatesAutoresizingMaskIntoConstraints=false
-        sortlabel.font = UIFont.systemFont(ofSize: 16)
-        sortlabel.textColor = UIColor.blue
-        sortlabel.text = "Sort"
-        return sortlabel
-    }()
+
     
     var list:[Contactmodel]=[]
     
@@ -45,10 +37,8 @@ class ContactsViewController: UIViewController, UITableViewDelegate, UITableView
         let myRightImage = UIImage(named: "add-line-2")?.withRenderingMode(.alwaysOriginal)
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: myRightImage, style: .plain, target: self, action: #selector(addTapped))
         
-        view.addSubview(sortlabel)
-        sortlabel.topAnchor.constraint(equalTo: view.topAnchor,constant: 35).isActive=true
-        sortlabel.leftAnchor.constraint(equalTo: view.leftAnchor,constant: 8).isActive=true
-        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Sort", style: .plain, target: self, action: #selector(addTapped))
+
         
     }
     
