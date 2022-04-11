@@ -127,6 +127,73 @@ class DataViewController: UIViewController {
         return greenView
     }()
     
+    var iconImage: UIImageView = {
+        let iconImage = UIImageView()
+        iconImage.translatesAutoresizingMaskIntoConstraints=false
+        iconImage.image = UIImage(named: "icons_image-1")
+        return iconImage
+    }()
+    
+    var usingLabel: UILabel = {
+        let usingLabel = UILabel()
+        usingLabel.translatesAutoresizingMaskIntoConstraints=false
+        usingLabel.font = UIFont.systemFont(ofSize: 20)
+        usingLabel.textColor = .black
+        usingLabel.text = "Using Cellular"
+        return usingLabel
+    }()
+    
+    var mgLabel: UILabel = {
+        let mgLabel = UILabel()
+        mgLabel.translatesAutoresizingMaskIntoConstraints=false
+        mgLabel.font = UIFont.systemFont(ofSize: 16)
+        mgLabel.textColor = .systemGray
+        mgLabel.text = "Media (2.5 MB)"
+        return mgLabel
+    }()
+    
+    
+    var appleView: UIView = {
+        let appleView = UIView()
+        appleView.translatesAutoresizingMaskIntoConstraints=false
+        appleView.backgroundColor = .systemGray5
+        return appleView
+    }()
+    
+    var blueView: UIView = {
+        let blueView = UIView()
+        blueView.translatesAutoresizingMaskIntoConstraints=false
+        blueView.backgroundColor = .systemBlue
+        blueView.layer.cornerRadius = 30
+        return blueView
+    }()
+    
+    var alertImage: UIImageView = {
+        let alertImage = UIImageView()
+        alertImage.translatesAutoresizingMaskIntoConstraints=false
+        alertImage.image = UIImage(named: "wifi_image")
+        return alertImage
+    }()
+    
+    var wiFiLabel: UILabel = {
+        let wiFiLabel = UILabel()
+        wiFiLabel.translatesAutoresizingMaskIntoConstraints=false
+        wiFiLabel.font = UIFont.systemFont(ofSize: 20)
+        wiFiLabel.textColor = .black
+        wiFiLabel.text = "Using Wi-Fi"
+        return wiFiLabel
+    }()
+    
+    var fieleLabel: UILabel = {
+        let fieleLabel = UILabel()
+        fieleLabel.translatesAutoresizingMaskIntoConstraints=false
+        fieleLabel.font = UIFont.systemFont(ofSize: 16)
+        fieleLabel.textColor = .systemGray
+        fieleLabel.text = "Media (15 Mb), Files (3.0 MB)"
+        return fieleLabel
+    }()
+    
+    
 
     
     
@@ -202,13 +269,55 @@ class DataViewController: UIViewController {
         appView.layer.cornerRadius = 7
         
         appView.addSubview(greenView)
-        greenView.topAnchor.constraint(equalTo: appView.topAnchor,constant: 10).isActive=true
+        greenView.topAnchor.constraint(equalTo: appView.topAnchor,constant: 15).isActive=true
         greenView.leftAnchor.constraint(equalTo: appView.leftAnchor,constant: 10).isActive=true
         greenView.heightAnchor.constraint(equalToConstant: 32).isActive=true
         greenView.widthAnchor.constraint(equalToConstant: 30).isActive=true
         greenView.layer.cornerRadius = 5
         
+        greenView.addSubview(iconImage)
+        iconImage.topAnchor.constraint(equalTo: greenView.topAnchor,constant: 4).isActive=true
+        iconImage.leftAnchor.constraint(equalTo: greenView.leftAnchor,constant: 3).isActive=true
 
+        appView.addSubview(usingLabel)
+        usingLabel.topAnchor.constraint(equalTo: appView.topAnchor,constant: 8).isActive=true
+        usingLabel.leftAnchor.constraint(equalTo: greenView.rightAnchor,constant: 10).isActive=true
+        
+        appView.addSubview(mgLabel)
+        mgLabel.topAnchor.constraint(equalTo: usingLabel.bottomAnchor,constant: 1).isActive=true
+        mgLabel.leftAnchor.constraint(equalTo: greenView.rightAnchor,constant: 10).isActive=true
+        
+        appView.addSubview(appleView)
+        appleView.topAnchor.constraint(equalTo: mgLabel.bottomAnchor,constant: 10).isActive=true
+        appleView.leftAnchor.constraint(equalTo: greenView.rightAnchor,constant: 10).isActive=true
+        appleView.rightAnchor.constraint(equalTo: appView.rightAnchor).isActive=true
+        appleView.heightAnchor.constraint(equalToConstant: 1).isActive=true
+        
+        appView.addSubview(blueView)
+        blueView.topAnchor.constraint(equalTo: appleView.bottomAnchor,constant: 15).isActive=true
+        blueView.leftAnchor.constraint(equalTo: appView.leftAnchor,constant: 10).isActive=true
+        blueView.heightAnchor.constraint(equalToConstant: 32).isActive=true
+        blueView.widthAnchor.constraint(equalToConstant: 30).isActive=true
+        blueView.layer.cornerRadius = 5
+        
+        blueView.addSubview(alertImage)
+        alertImage.topAnchor.constraint(equalTo: blueView.topAnchor,constant: 4).isActive=true
+        alertImage.leftAnchor.constraint(equalTo: blueView.leftAnchor,constant: 3).isActive=true
+        
+        appView.addSubview(wiFiLabel)
+        wiFiLabel.topAnchor.constraint(equalTo: appleView.bottomAnchor,constant: 10).isActive=true
+        wiFiLabel.leftAnchor.constraint(equalTo: blueView.rightAnchor,constant: 10).isActive=true
+        
+        appView.addSubview(fieleLabel)
+        fieleLabel.topAnchor.constraint(equalTo: wiFiLabel.bottomAnchor,constant: 1).isActive=true
+        fieleLabel.leftAnchor.constraint(equalTo: blueView.rightAnchor,constant: 10).isActive=true
+        
+        
+        
+        
+        
+        
+        
         
     }
     
